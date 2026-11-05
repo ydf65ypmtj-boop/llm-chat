@@ -1,0 +1,1556 @@
+{
+ "format": "jisaku-llm-int8",
+ "version": 1,
+ "quantization": "per-tensor symmetric int8, scale=max|w|/127",
+ "config": {
+  "vocab_size": 6000,
+  "block_size": 256,
+  "n_layer": 12,
+  "n_head": 8,
+  "n_embd": 448
+ },
+ "specials": {
+  "pad": 0,
+  "eos": 1,
+  "unk": 2
+ },
+ "lm_head": "tied:tok_emb.weight",
+ "bpe_file": "bpe.json",
+ "files": [
+  "weights-0.bin",
+  "weights-1.bin"
+ ],
+ "total_params": 31774848,
+ "tensors": [
+  {
+   "name": "tok_emb.weight",
+   "shape": [
+    6000,
+    448
+   ],
+   "scale": 0.0019389854406747292,
+   "file": 0,
+   "offset": 0,
+   "length": 2688000
+  },
+  {
+   "name": "pos_emb.weight",
+   "shape": [
+    256,
+    448
+   ],
+   "scale": 0.0008472259354403638,
+   "file": 0,
+   "offset": 2688000,
+   "length": 114688
+  },
+  {
+   "name": "blocks.0.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.007860704669802208,
+   "file": 0,
+   "offset": 2802688,
+   "length": 448
+  },
+  {
+   "name": "blocks.0.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.0001932440369617282,
+   "file": 0,
+   "offset": 2803136,
+   "length": 448
+  },
+  {
+   "name": "blocks.0.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0007845134012342438,
+   "file": 0,
+   "offset": 2803584,
+   "length": 602112
+  },
+  {
+   "name": "blocks.0.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.0015876341288483988,
+   "file": 0,
+   "offset": 3405696,
+   "length": 1344
+  },
+  {
+   "name": "blocks.0.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0006832672268386901,
+   "file": 0,
+   "offset": 3407040,
+   "length": 200704
+  },
+  {
+   "name": "blocks.0.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00013641578944649282,
+   "file": 0,
+   "offset": 3607744,
+   "length": 448
+  },
+  {
+   "name": "blocks.0.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008106395015566368,
+   "file": 0,
+   "offset": 3608192,
+   "length": 448
+  },
+  {
+   "name": "blocks.0.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 9.928785968483902e-05,
+   "file": 0,
+   "offset": 3608640,
+   "length": 448
+  },
+  {
+   "name": "blocks.0.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0008693257068085858,
+   "file": 0,
+   "offset": 3609088,
+   "length": 802816
+  },
+  {
+   "name": "blocks.0.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.0001759596872986771,
+   "file": 0,
+   "offset": 4411904,
+   "length": 1792
+  },
+  {
+   "name": "blocks.0.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.0008848938416308306,
+   "file": 0,
+   "offset": 4413696,
+   "length": 802816
+  },
+  {
+   "name": "blocks.0.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00010511645035246226,
+   "file": 0,
+   "offset": 5216512,
+   "length": 448
+  },
+  {
+   "name": "blocks.1.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008037285541924904,
+   "file": 0,
+   "offset": 5216960,
+   "length": 448
+  },
+  {
+   "name": "blocks.1.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.0001549121051088093,
+   "file": 0,
+   "offset": 5217408,
+   "length": 448
+  },
+  {
+   "name": "blocks.1.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0009333205622012221,
+   "file": 0,
+   "offset": 5217856,
+   "length": 602112
+  },
+  {
+   "name": "blocks.1.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.000513554382042622,
+   "file": 0,
+   "offset": 5819968,
+   "length": 1344
+  },
+  {
+   "name": "blocks.1.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0008525871268407567,
+   "file": 0,
+   "offset": 5821312,
+   "length": 200704
+  },
+  {
+   "name": "blocks.1.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 7.699217324651132e-05,
+   "file": 0,
+   "offset": 6022016,
+   "length": 448
+  },
+  {
+   "name": "blocks.1.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008177529169818547,
+   "file": 0,
+   "offset": 6022464,
+   "length": 448
+  },
+  {
+   "name": "blocks.1.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00013096014580388706,
+   "file": 0,
+   "offset": 6022912,
+   "length": 448
+  },
+  {
+   "name": "blocks.1.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0008520275706381309,
+   "file": 0,
+   "offset": 6023360,
+   "length": 802816
+  },
+  {
+   "name": "blocks.1.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.00012709404246544274,
+   "file": 0,
+   "offset": 6826176,
+   "length": 1792
+  },
+  {
+   "name": "blocks.1.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.0008238710639044994,
+   "file": 0,
+   "offset": 6827968,
+   "length": 802816
+  },
+  {
+   "name": "blocks.1.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00011129843760428467,
+   "file": 0,
+   "offset": 7630784,
+   "length": 448
+  },
+  {
+   "name": "blocks.2.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008020475154786598,
+   "file": 0,
+   "offset": 7631232,
+   "length": 448
+  },
+  {
+   "name": "blocks.2.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00010743458557316637,
+   "file": 0,
+   "offset": 7631680,
+   "length": 448
+  },
+  {
+   "name": "blocks.2.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0009795939476471248,
+   "file": 0,
+   "offset": 7632128,
+   "length": 602112
+  },
+  {
+   "name": "blocks.2.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.0006754694022531585,
+   "file": 0,
+   "offset": 8234240,
+   "length": 1344
+  },
+  {
+   "name": "blocks.2.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0007278241041138416,
+   "file": 0,
+   "offset": 8235584,
+   "length": 200704
+  },
+  {
+   "name": "blocks.2.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 8.614070156193155e-05,
+   "file": 0,
+   "offset": 8436288,
+   "length": 448
+  },
+  {
+   "name": "blocks.2.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008245116143714724,
+   "file": 0,
+   "offset": 8436736,
+   "length": 448
+  },
+  {
+   "name": "blocks.2.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00022552948533080693,
+   "file": 0,
+   "offset": 8437184,
+   "length": 448
+  },
+  {
+   "name": "blocks.2.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0008770327751092085,
+   "file": 0,
+   "offset": 8437632,
+   "length": 802816
+  },
+  {
+   "name": "blocks.2.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.00015037520018618876,
+   "file": 0,
+   "offset": 9240448,
+   "length": 1792
+  },
+  {
+   "name": "blocks.2.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.0008096654466756686,
+   "file": 0,
+   "offset": 9242240,
+   "length": 802816
+  },
+  {
+   "name": "blocks.2.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00012498084954389437,
+   "file": 0,
+   "offset": 10045056,
+   "length": 448
+  },
+  {
+   "name": "blocks.3.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.007994969060101846,
+   "file": 0,
+   "offset": 10045504,
+   "length": 448
+  },
+  {
+   "name": "blocks.3.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00010792581789840864,
+   "file": 0,
+   "offset": 10045952,
+   "length": 448
+  },
+  {
+   "name": "blocks.3.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0008739434241309879,
+   "file": 0,
+   "offset": 10046400,
+   "length": 602112
+  },
+  {
+   "name": "blocks.3.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.0005536182658878837,
+   "file": 0,
+   "offset": 10648512,
+   "length": 1344
+  },
+  {
+   "name": "blocks.3.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0007937853847901652,
+   "file": 0,
+   "offset": 10649856,
+   "length": 200704
+  },
+  {
+   "name": "blocks.3.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00011853980795135648,
+   "file": 0,
+   "offset": 10850560,
+   "length": 448
+  },
+  {
+   "name": "blocks.3.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008242137788787601,
+   "file": 0,
+   "offset": 10851008,
+   "length": 448
+  },
+  {
+   "name": "blocks.3.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00030212908044574766,
+   "file": 0,
+   "offset": 10851456,
+   "length": 448
+  },
+  {
+   "name": "blocks.3.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0008908235064641698,
+   "file": 0,
+   "offset": 10851904,
+   "length": 802816
+  },
+  {
+   "name": "blocks.3.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.00016949129268879027,
+   "file": 0,
+   "offset": 11654720,
+   "length": 1792
+  },
+  {
+   "name": "blocks.3.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.000826151058899136,
+   "file": 0,
+   "offset": 11656512,
+   "length": 802816
+  },
+  {
+   "name": "blocks.3.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00011410757781952385,
+   "file": 0,
+   "offset": 12459328,
+   "length": 448
+  },
+  {
+   "name": "blocks.4.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.00807228801757332,
+   "file": 0,
+   "offset": 12459776,
+   "length": 448
+  },
+  {
+   "name": "blocks.4.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00013802834148482075,
+   "file": 0,
+   "offset": 12460224,
+   "length": 448
+  },
+  {
+   "name": "blocks.4.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.000828441672437773,
+   "file": 0,
+   "offset": 12460672,
+   "length": 602112
+  },
+  {
+   "name": "blocks.4.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.0003990168705230623,
+   "file": 0,
+   "offset": 13062784,
+   "length": 1344
+  },
+  {
+   "name": "blocks.4.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0007560109998297503,
+   "file": 0,
+   "offset": 13064128,
+   "length": 200704
+  },
+  {
+   "name": "blocks.4.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00011520608379615573,
+   "file": 0,
+   "offset": 13264832,
+   "length": 448
+  },
+  {
+   "name": "blocks.4.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008381967469463198,
+   "file": 0,
+   "offset": 13265280,
+   "length": 448
+  },
+  {
+   "name": "blocks.4.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.0004017425510357684,
+   "file": 0,
+   "offset": 13265728,
+   "length": 448
+  },
+  {
+   "name": "blocks.4.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0008644903386671712,
+   "file": 0,
+   "offset": 13266176,
+   "length": 802816
+  },
+  {
+   "name": "blocks.4.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.00017777755563184032,
+   "file": 0,
+   "offset": 14068992,
+   "length": 1792
+  },
+  {
+   "name": "blocks.4.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.0008341045243533577,
+   "file": 0,
+   "offset": 14070784,
+   "length": 802816
+  },
+  {
+   "name": "blocks.4.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00010342388523845222,
+   "file": 0,
+   "offset": 14873600,
+   "length": 448
+  },
+  {
+   "name": "blocks.5.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008067690481351116,
+   "file": 0,
+   "offset": 14874048,
+   "length": 448
+  },
+  {
+   "name": "blocks.5.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00013778794292859206,
+   "file": 0,
+   "offset": 14874496,
+   "length": 448
+  },
+  {
+   "name": "blocks.5.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0009302218246647693,
+   "file": 0,
+   "offset": 14874944,
+   "length": 602112
+  },
+  {
+   "name": "blocks.5.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.00039852296156207405,
+   "file": 0,
+   "offset": 15477056,
+   "length": 1344
+  },
+  {
+   "name": "blocks.5.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0007822778750592329,
+   "file": 0,
+   "offset": 15478400,
+   "length": 200704
+  },
+  {
+   "name": "blocks.5.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00010992375415141188,
+   "file": 0,
+   "offset": 15679104,
+   "length": 448
+  },
+  {
+   "name": "blocks.5.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008405932291286198,
+   "file": 0,
+   "offset": 15679552,
+   "length": 448
+  },
+  {
+   "name": "blocks.5.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00041133872284663945,
+   "file": 0,
+   "offset": 15680000,
+   "length": 448
+  },
+  {
+   "name": "blocks.5.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0009280215567491186,
+   "file": 0,
+   "offset": 15680448,
+   "length": 802816
+  },
+  {
+   "name": "blocks.5.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.00016775225677828152,
+   "file": 0,
+   "offset": 16483264,
+   "length": 1792
+  },
+  {
+   "name": "blocks.5.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.0008118943435939278,
+   "file": 1,
+   "offset": 0,
+   "length": 802816
+  },
+  {
+   "name": "blocks.5.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 9.466315377650299e-05,
+   "file": 1,
+   "offset": 802816,
+   "length": 448
+  },
+  {
+   "name": "blocks.6.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008045178698742484,
+   "file": 1,
+   "offset": 803264,
+   "length": 448
+  },
+  {
+   "name": "blocks.6.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00014131636483462776,
+   "file": 1,
+   "offset": 803712,
+   "length": 448
+  },
+  {
+   "name": "blocks.6.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0008481731564979854,
+   "file": 1,
+   "offset": 804160,
+   "length": 602112
+  },
+  {
+   "name": "blocks.6.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.000479536585685775,
+   "file": 1,
+   "offset": 1406272,
+   "length": 1344
+  },
+  {
+   "name": "blocks.6.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0007125655497152974,
+   "file": 1,
+   "offset": 1407616,
+   "length": 200704
+  },
+  {
+   "name": "blocks.6.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00010480475061991083,
+   "file": 1,
+   "offset": 1608320,
+   "length": 448
+  },
+  {
+   "name": "blocks.6.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008491377192219412,
+   "file": 1,
+   "offset": 1608768,
+   "length": 448
+  },
+  {
+   "name": "blocks.6.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.0004060229975876846,
+   "file": 1,
+   "offset": 1609216,
+   "length": 448
+  },
+  {
+   "name": "blocks.6.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0009025753013730988,
+   "file": 1,
+   "offset": 1609664,
+   "length": 802816
+  },
+  {
+   "name": "blocks.6.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.00020370339080104678,
+   "file": 1,
+   "offset": 2412480,
+   "length": 1792
+  },
+  {
+   "name": "blocks.6.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.0008241868629230289,
+   "file": 1,
+   "offset": 2414272,
+   "length": 802816
+  },
+  {
+   "name": "blocks.6.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 9.708302315529876e-05,
+   "file": 1,
+   "offset": 3217088,
+   "length": 448
+  },
+  {
+   "name": "blocks.7.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008101145113547018,
+   "file": 1,
+   "offset": 3217536,
+   "length": 448
+  },
+  {
+   "name": "blocks.7.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00015472601659185305,
+   "file": 1,
+   "offset": 3217984,
+   "length": 448
+  },
+  {
+   "name": "blocks.7.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0009037943219575356,
+   "file": 1,
+   "offset": 3218432,
+   "length": 602112
+  },
+  {
+   "name": "blocks.7.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.0002958032441890146,
+   "file": 1,
+   "offset": 3820544,
+   "length": 1344
+  },
+  {
+   "name": "blocks.7.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0007864087820053101,
+   "file": 1,
+   "offset": 3821888,
+   "length": 200704
+  },
+  {
+   "name": "blocks.7.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.000102426189430586,
+   "file": 1,
+   "offset": 4022592,
+   "length": 448
+  },
+  {
+   "name": "blocks.7.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008514808857534814,
+   "file": 1,
+   "offset": 4023040,
+   "length": 448
+  },
+  {
+   "name": "blocks.7.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00043838591439517466,
+   "file": 1,
+   "offset": 4023488,
+   "length": 448
+  },
+  {
+   "name": "blocks.7.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0009524403946606193,
+   "file": 1,
+   "offset": 4023936,
+   "length": 802816
+  },
+  {
+   "name": "blocks.7.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.00018694517239341586,
+   "file": 1,
+   "offset": 4826752,
+   "length": 1792
+  },
+  {
+   "name": "blocks.7.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.000785177852225116,
+   "file": 1,
+   "offset": 4828544,
+   "length": 802816
+  },
+  {
+   "name": "blocks.7.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00010234747433990945,
+   "file": 1,
+   "offset": 5631360,
+   "length": 448
+  },
+  {
+   "name": "blocks.8.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008138696039755514,
+   "file": 1,
+   "offset": 5631808,
+   "length": 448
+  },
+  {
+   "name": "blocks.8.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00015465843337258015,
+   "file": 1,
+   "offset": 5632256,
+   "length": 448
+  },
+  {
+   "name": "blocks.8.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0009421154739349846,
+   "file": 1,
+   "offset": 5632704,
+   "length": 602112
+  },
+  {
+   "name": "blocks.8.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.0003049804528397838,
+   "file": 1,
+   "offset": 6234816,
+   "length": 1344
+  },
+  {
+   "name": "blocks.8.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0007923214337018531,
+   "file": 1,
+   "offset": 6236160,
+   "length": 200704
+  },
+  {
+   "name": "blocks.8.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00010882518950879104,
+   "file": 1,
+   "offset": 6436864,
+   "length": 448
+  },
+  {
+   "name": "blocks.8.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008562178123654344,
+   "file": 1,
+   "offset": 6437312,
+   "length": 448
+  },
+  {
+   "name": "blocks.8.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.0003932228414561805,
+   "file": 1,
+   "offset": 6437760,
+   "length": 448
+  },
+  {
+   "name": "blocks.8.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0009099496748503738,
+   "file": 1,
+   "offset": 6438208,
+   "length": 802816
+  },
+  {
+   "name": "blocks.8.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.0001869800053243562,
+   "file": 1,
+   "offset": 7241024,
+   "length": 1792
+  },
+  {
+   "name": "blocks.8.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.0008891515257790333,
+   "file": 1,
+   "offset": 7242816,
+   "length": 802816
+  },
+  {
+   "name": "blocks.8.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 9.313385610974679e-05,
+   "file": 1,
+   "offset": 8045632,
+   "length": 448
+  },
+  {
+   "name": "blocks.9.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008190082752798486,
+   "file": 1,
+   "offset": 8046080,
+   "length": 448
+  },
+  {
+   "name": "blocks.9.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.0001473946012849883,
+   "file": 1,
+   "offset": 8046528,
+   "length": 448
+  },
+  {
+   "name": "blocks.9.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0009412739103234659,
+   "file": 1,
+   "offset": 8046976,
+   "length": 602112
+  },
+  {
+   "name": "blocks.9.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.00034280751985827767,
+   "file": 1,
+   "offset": 8649088,
+   "length": 1344
+  },
+  {
+   "name": "blocks.9.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0007143827287230905,
+   "file": 1,
+   "offset": 8650432,
+   "length": 200704
+  },
+  {
+   "name": "blocks.9.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 9.527801000696468e-05,
+   "file": 1,
+   "offset": 8851136,
+   "length": 448
+  },
+  {
+   "name": "blocks.9.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008489186369527982,
+   "file": 1,
+   "offset": 8851584,
+   "length": 448
+  },
+  {
+   "name": "blocks.9.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00042128043733243866,
+   "file": 1,
+   "offset": 8852032,
+   "length": 448
+  },
+  {
+   "name": "blocks.9.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0009116911160664295,
+   "file": 1,
+   "offset": 8852480,
+   "length": 802816
+  },
+  {
+   "name": "blocks.9.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.00017588116287246464,
+   "file": 1,
+   "offset": 9655296,
+   "length": 1792
+  },
+  {
+   "name": "blocks.9.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.0009238395517266641,
+   "file": 1,
+   "offset": 9657088,
+   "length": 802816
+  },
+  {
+   "name": "blocks.9.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 9.207450234749185e-05,
+   "file": 1,
+   "offset": 10459904,
+   "length": 448
+  },
+  {
+   "name": "blocks.10.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.00812559522043063,
+   "file": 1,
+   "offset": 10460352,
+   "length": 448
+  },
+  {
+   "name": "blocks.10.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.0001586144570055909,
+   "file": 1,
+   "offset": 10460800,
+   "length": 448
+  },
+  {
+   "name": "blocks.10.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0008949377522693844,
+   "file": 1,
+   "offset": 10461248,
+   "length": 602112
+  },
+  {
+   "name": "blocks.10.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.00037098629033471657,
+   "file": 1,
+   "offset": 11063360,
+   "length": 1344
+  },
+  {
+   "name": "blocks.10.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0008041422198137899,
+   "file": 1,
+   "offset": 11064704,
+   "length": 200704
+  },
+  {
+   "name": "blocks.10.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 9.90929492697941e-05,
+   "file": 1,
+   "offset": 11265408,
+   "length": 448
+  },
+  {
+   "name": "blocks.10.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.00853915571227787,
+   "file": 1,
+   "offset": 11265856,
+   "length": 448
+  },
+  {
+   "name": "blocks.10.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.000383223194306291,
+   "file": 1,
+   "offset": 11266304,
+   "length": 448
+  },
+  {
+   "name": "blocks.10.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0009212771973272008,
+   "file": 1,
+   "offset": 11266752,
+   "length": 802816
+  },
+  {
+   "name": "blocks.10.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.00019555041698489603,
+   "file": 1,
+   "offset": 12069568,
+   "length": 1792
+  },
+  {
+   "name": "blocks.10.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.0008529117257576289,
+   "file": 1,
+   "offset": 12071360,
+   "length": 802816
+  },
+  {
+   "name": "blocks.10.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 8.429983616109909e-05,
+   "file": 1,
+   "offset": 12874176,
+   "length": 448
+  },
+  {
+   "name": "blocks.11.ln1.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008123186629588209,
+   "file": 1,
+   "offset": 12874624,
+   "length": 448
+  },
+  {
+   "name": "blocks.11.ln1.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00015362419598684537,
+   "file": 1,
+   "offset": 12875072,
+   "length": 448
+  },
+  {
+   "name": "blocks.11.attn.qkv.weight",
+   "shape": [
+    1344,
+    448
+   ],
+   "scale": 0.0008391646418984481,
+   "file": 1,
+   "offset": 12875520,
+   "length": 602112
+  },
+  {
+   "name": "blocks.11.attn.qkv.bias",
+   "shape": [
+    1344
+   ],
+   "scale": 0.0002761976573410935,
+   "file": 1,
+   "offset": 13477632,
+   "length": 1344
+  },
+  {
+   "name": "blocks.11.attn.proj.weight",
+   "shape": [
+    448,
+    448
+   ],
+   "scale": 0.0007661809250125735,
+   "file": 1,
+   "offset": 13478976,
+   "length": 200704
+  },
+  {
+   "name": "blocks.11.attn.proj.bias",
+   "shape": [
+    448
+   ],
+   "scale": 9.445708949030854e-05,
+   "file": 1,
+   "offset": 13679680,
+   "length": 448
+  },
+  {
+   "name": "blocks.11.ln2.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.008250622298773817,
+   "file": 1,
+   "offset": 13680128,
+   "length": 448
+  },
+  {
+   "name": "blocks.11.ln2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.00034410019559184395,
+   "file": 1,
+   "offset": 13680576,
+   "length": 448
+  },
+  {
+   "name": "blocks.11.mlp.0.weight",
+   "shape": [
+    1792,
+    448
+   ],
+   "scale": 0.0009254902953237999,
+   "file": 1,
+   "offset": 13681024,
+   "length": 802816
+  },
+  {
+   "name": "blocks.11.mlp.0.bias",
+   "shape": [
+    1792
+   ],
+   "scale": 0.00022003101551626612,
+   "file": 1,
+   "offset": 14483840,
+   "length": 1792
+  },
+  {
+   "name": "blocks.11.mlp.2.weight",
+   "shape": [
+    448,
+    1792
+   ],
+   "scale": 0.0008150340886566583,
+   "file": 1,
+   "offset": 14485632,
+   "length": 802816
+  },
+  {
+   "name": "blocks.11.mlp.2.bias",
+   "shape": [
+    448
+   ],
+   "scale": 9.628541503600248e-05,
+   "file": 1,
+   "offset": 15288448,
+   "length": 448
+  },
+  {
+   "name": "ln_f.weight",
+   "shape": [
+    448
+   ],
+   "scale": 0.010298650095781943,
+   "file": 1,
+   "offset": 15288896,
+   "length": 448
+  },
+  {
+   "name": "ln_f.bias",
+   "shape": [
+    448
+   ],
+   "scale": 0.0012794689634653526,
+   "file": 1,
+   "offset": 15289344,
+   "length": 448
+  }
+ ]
+}
